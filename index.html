@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Profile card component</title>
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      h1 { font-size: 18px; color: hsl(229, 23%, 23%); }
+      h2 { color:hsl(0, 0%, 59%); font-weight: 400; font-size: 16px; }
+      h3 { color:hsl(0, 0%, 59%); font-weight: 400; font-size: 11px; margin: 5px auto 0; }
+      hr { background-color:lightgrey; width: 100%; border: 0; height: 1px; }
+      html { min-height: 100vh; min-width: 100vw; position: relative; overflow: hidden; font-family: 'Kumbh Sans', sans-serif; }
+      body { background-color: hsl(185, 75%, 39%); min-height: 100vh; min-width: 100vw; 
+      margin: 0; overflow: hidden; padding: 0; position: static; }
+      footer { position: absolute; bottom: 0px; left: 0px; min-width: 100vw; }
+      span { color:hsl(0, 0%, 59%); font-weight: 400; }
+      table { margin: 0 auto; text-align: center; }
+      td { width: 20%; }
+
+      .attribution { position: absolute; font-size: 11px; text-align: center; bottom: 0px; min-width: 100vw; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+      .bg-card {width: 100%; border-radius: 20px 20px 0 0;}
+      .profile-image { position: absolute; left: 50%; border-radius: 100%; border: 6px solid; 
+      border-color: white; transform: translate(-50%, -50%); }
+      .bg-top { position: relative; bottom: 450px; right: 250px; }
+      .bg-bottom { position: relative; bottom: 600px; left:800px; }
+      .container { min-height: 100vh; min-width: 100vw; position: absolute; top: 0px; left: 0px;}
+      .card { background-color: white; height: 350px; width: 310px; border-radius: 20px; 
+      box-shadow: 0 0 40px 0 hsl(227, 10%, 46%); position: absolute; left: 50%; top: 50%; 
+      transform: translate(-50%, -50%); z-index: 1; }
+      .card-middle { margin: 70px auto 20px; text-align: center;}
+      .card-bottom { margin-top: 20px; text-align: center; }
+      .stats { font-size: 18px; font-weight: 700; width: 20%; color: hsl(229, 23%, 23%); }
+    </style>
+  </head>
+
+  <body>
+    <img class="bg-top" src="images\bg-pattern-top.svg" alt="">
+    <img class="bg-bottom" src="images\bg-pattern-bottom.svg" alt="">
+    
+    <div class="container">
+      <div class="card">
+        <div class="card-top">
+          <img class="bg-card" src="images\bg-pattern-card.svg" alt=""> 
+        </div>
+
+        <img class="profile-image" src="images\image-victor.jpg" alt="">
+        
+        <div class="card-middle">
+          <h1>Victor Crest<span> 26</span></h1>
+          <h2>London</h2>
+        </div>
+        
+        <hr>
+
+        <div class="card-bottom">
+          <table>
+            <tr>
+              <td class="stats">80K</td>
+              <td class="stats">803K</td>
+              <td class="stats">1.4K</td>
+            </tr>
+            <tr>
+              <td><h3>Followers</h3></td>
+              <td><h3>Likes</h3></td>
+              <td><h3>Photos</h3></td>
+            </tr>
+          </table>
+        </div>  
+      </div>
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Peter Nyiam</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
