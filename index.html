@@ -26,14 +26,15 @@
 
       .attribution { position: absolute; font-size: 11px; text-align: center; bottom: 0px; min-width: 100vw; }
       .attribution a { color: hsl(228, 45%, 44%); }
+      .background { position: absolute; display: flex; }
       .bg-card {width: 100%; border-radius: 20px 20px 0 0;}
       .profile-image { position: absolute; left: 50%; border-radius: 100%; border: 6px solid; 
       border-color: white; transform: translate(-50%, -50%); }
-      .bg-top { position: relative; bottom: 450px; right: 250px; }
-      .bg-bottom { position: relative; bottom: 600px; left:800px; }
-      .container { min-height: 100vh; min-width: 100vw; position: absolute; top: 0px; left: 0px;}
+      .bg-top { position: relative; bottom: 450px; right: 200px; }
+      .bg-bottom { position: relative; top: 400px; right: 200px; }
+      .container { min-height: 100vh; min-width: 100vw; position: absolute; top: 0px; left: 0px; }
       .card { background-color: white; height: 350px; width: 310px; border-radius: 20px; 
-      box-shadow: 0 0 40px 0 hsl(227, 10%, 46%); position: absolute; left: 50%; top: 50%; 
+      box-shadow: 0 0 40px 0 hsl(227, 10%, 46%); position: absolute; left: 50%; top: 50%;
       transform: translate(-50%, -50%); z-index: 1; }
       .card-middle { margin: 70px auto 20px; text-align: center;}
       .card-bottom { margin-top: 20px; text-align: center; }
@@ -42,16 +43,17 @@
   </head>
 
   <body>
-    <img class="bg-top" src="images\bg-pattern-top.svg" alt="">
-    <img class="bg-bottom" src="images\bg-pattern-bottom.svg" alt="">
-    
+    <div class="background">
+      <img class="bg-top" src="images/bg-pattern-top.svg" alt="Top background circle">
+      <img class="bg-bottom" src="images/bg-pattern-bottom.svg" alt="Top background circle">
+    </div>
     <div class="container">
       <div class="card">
         <div class="card-top">
-          <img class="bg-card" src="images\bg-pattern-card.svg" alt=""> 
+          <img class="bg-card" src="images/bg-pattern-card.svg" alt="Card background pattern"> 
         </div>
 
-        <img class="profile-image" src="images\image-victor.jpg" alt="">
+        <img class="profile-image" src="images/image-victor.jpg" alt="Victor profile image">
         
         <div class="card-middle">
           <h1>Victor Crest<span> 26</span></h1>
